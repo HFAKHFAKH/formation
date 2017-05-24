@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { HighlightDirective } from './directives/highlight.directive';
+import { ReverseStrPipe } from './pipes/reverse-str.pipe';
 
 @NgModule({
   imports: [
@@ -15,9 +16,14 @@ import { HighlightDirective } from './directives/highlight.directive';
   exports:
   [
     NavbarComponent,
-    HighlightDirective
+    HighlightDirective,
+    ReverseStrPipe
   ],
-  declarations: [NavbarComponent, HighlightDirective],
+  declarations: [
+    NavbarComponent,
+    HighlightDirective,
+    ReverseStrPipe
+  ],
   providers: [FormationService]
 })
 export class SharedModule { }
